@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"; // or other themes
+
+
+// src/styles.scss
+
+// Bootstrap customization (optional)
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: $primary-color;
+}
+
+h3 {
+  color: $secondary-color;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+button {
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+html, body { height: 100%; }
+

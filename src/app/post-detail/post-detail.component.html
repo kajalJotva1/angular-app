@@ -1,0 +1,22 @@
+<div class="container  detail-container mt-5 ">
+    <h2 class="post-header-text">Post Detail</h2>
+    <div class="card shadow-sm" *ngIf="post">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-1">
+            <div class="title-circle d-flex align-items-center justify-content-center">
+              {{ post.title.charAt(0) }}
+            </div>
+            <h2 class="card-title ml-3">{{ post.title }}</h2>
+          </div>
+          <p class="card-text">{{ post.body }}</p>
+          <div class="d-flex">
+            <button class="btn mr-2 edit-btn" (click)="editPost()">Edit</button>
+            <button class="btn delete-btn mr-2" (click)="deletePost()">Delete</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div *ngIf="isShowMessage">
+    <app-success-message [message]="message" [backgroundColor]="bgColor"></app-success-message>
+  </div>
+  
